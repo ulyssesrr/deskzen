@@ -8,13 +8,13 @@
 #ifndef DESKZEN_DATABASE_H_
 #define DESKZEN_DATABASE_H_
 
+#include <string>
+
 class Database {
 public:
-	static Database& getInstance();
+	Database(const std::string& filename);
 private:
-	Database();
 	Database(Database const&);
-	void operator=(Database const&);
 };
 
 #endif /* DESKZEN_DATABASE_H_ */
